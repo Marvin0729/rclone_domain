@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How rclone_server accesses and handles Google Drive files and OAuth data for personal synchronization.">
+  <title>Privacy Policy | rclone_server</title>
+  <style>
+:root { color-scheme:light; --ink:#132742; --muted:#536680; --blue:#295fc9; --line:#dce6f0; }
+* { box-sizing:border-box; }
+body { margin:0; background:#f7f9fd; color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+a { color:var(--blue); } a:hover { text-decoration:underline; }
+.header { max-width:1020px; margin:auto; padding:23px 28px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+.logo { display:flex; align-items:center; gap:11px; color:var(--ink); text-decoration:none; font-size:18px; font-weight:800; letter-spacing:-.025em; }
+.logo-mark { display:grid; place-items:center; width:39px; height:39px; border-radius:12px; font-size:26px; line-height:1; background:linear-gradient(140deg,#397bea,#18aeaa); color:white; }
+nav { display:flex; gap:25px; } nav a { color:#425677; text-decoration:none; font-size:14px; }
+main { max-width:1020px; margin:auto; padding:38px 28px 75px; }
+h1 { font-size:clamp(33px,5vw,54px); line-height:1.12; letter-spacing:-.045em; margin:15px 0 22px; max-width:750px; }
+h2 { font-size:23px; letter-spacing:-.025em; line-height:1.25; margin:0 0 14px; }
+h3 { font-size:17px; margin:0 0 8px; }
+p { margin:0; }
+.lead { font-size:18px; max-width:720px; color:#4d607c; line-height:1.7; }
+.eyebrow { font-size:12px; font-weight:850; letter-spacing:.15em; text-transform:uppercase; color:#2372b9; }
+.badge { display:inline-block; border:1px solid #c0daeb; background:#eaf5ff; color:#205f9a; border-radius:40px; padding:5px 13px; font-size:12px; letter-spacing:.05em; font-weight:750; }
+.hero { border:1px solid var(--line); border-radius:24px; padding:clamp(30px,6vw,69px); background:radial-gradient(circle at 88% 4%,#e0eeff 0,transparent 40%),linear-gradient(145deg,white,#f2f7ff); box-shadow:0 18px 60px #1534670b; }
+.hero .eyebrow { margin-top:28px; } .hero .lead { margin-bottom:17px; }
+.buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+.button { display:inline-block; color:white; background:#2863cf; border-radius:10px; padding:11px 18px; font-weight:700; text-decoration:none; font-size:14px; }
+.button.secondary { color:#315a97; border:1px solid #d6e3f4; background:white; }
+.button:hover { text-decoration:none; filter:brightness(.97); }
+.section-title { margin:39px 0 19px; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; }
+.card,.section { border:1px solid var(--line); background:white; border-radius:17px; padding:25px; }
+.card p,.section p,.section li { color:#53657d; } .section { margin-top:18px; } .section p+p { margin-top:13px; }
+.section ul { margin:8px 0 0; padding-left:22px; } .section li+li { margin-top:8px; }
+.note { color:#647892; font-size:14px; }
+.privacy { max-width:790px; } .privacy .lead { font-size:16px; margin-bottom:24px; }
+footer { max-width:964px; margin:0 auto; border-top:1px solid var(--line); padding:24px 0 45px; color:#70809b; font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; }
+footer a { color:#5a6f8b; }
+@media(max-width:700px) { .header { padding:18px; } nav { gap:12px; } nav a { font-size:12px; } main { padding:16px 18px 46px; } .grid { grid-template-columns:1fr; } .card,.section { padding:19px; } .hero { border-radius:18px; } footer { margin:0 18px; padding:18px 0 32px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="./index.html"><span class="logo-mark" aria-hidden="true">↻</span><span>rclone_server</span></a>
+    <nav aria-label="Main navigation"><a href="./index.html">Home</a><a href="./privacy.html">Privacy Policy</a><a href="https://github.com/Marvin0729/rclone_domain" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main>
+  <div class="privacy">
+    <div class="eyebrow">Privacy &amp; data handling</div>
+    <h1>Privacy Policy</h1>
+    <p class="lead">Effective date: October 25, 2026. This policy describes how <strong>rclone_server</strong>, a private rclone-based Google Drive synchronization setup, uses Google account data. The application is used only by its owner; it is not a public service.</p>
+    <section class="section"><h2>1. Information accessed</h2><p>When authorized through Google OAuth, rclone_server may access Google Drive files, folder structures, filenames, metadata, and file contents, as permitted by the OAuth scopes shown on the Google consent screen. Depending on the granted scopes and selected synchronization command, it may read, upload, create, update, move, or delete files.</p></section>
+    <section class="section"><h2>2. Purpose of access</h2><p>Access is used solely to synchronize, back up, and manage the owner's research projects and personal files between owner-controlled devices or servers and the owner's Google Drive. The application does not use Google user data for advertising, profiling, or unrelated purposes.</p></section>
+    <section class="section"><h2>3. Processing and storage</h2><p>Synchronization is performed by rclone running on the owner's computer or server. Files and metadata are transferred as needed between that environment and Google Drive. OAuth credentials and refresh tokens are stored in local rclone configuration, not in this website or this public GitHub repository. Depending on local settings, the owner's environment may retain file copies or operational logs, all under the owner's control.</p><p>This static website does not request Google sign-in, receive OAuth tokens, or store Google Drive files.</p></section>
+    <section class="section"><h2>4. Sharing</h2><p>The owner does not sell Google user data or provide it to advertisers or unrelated third parties. Data is transferred to Google Drive as necessary for owner-authorized operations. This website is hosted on GitHub Pages; GitHub may process standard website access information under its own privacy policy.</p></section>
+    <section class="section"><h2>5. Retention and deletion</h2><p>Files in Google Drive remain there until changed or deleted by the owner. Local files, rclone configuration, and optional logs remain on the owner's equipment until removed. The owner can revoke the application's Google account access at <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Google Account permissions</a> and remove local credentials or files as appropriate.</p></section>
+    <section class="section"><h2>6. Security and hosting</h2><p>This OAuth setup is intended for the owner's private devices and accounts. OAuth secrets and tokens must not be uploaded to GitHub. This website contains no custom tracking scripts, advertising scripts, cookies, or forms. GitHub Pages may log technical access information for site operations and security.</p></section>
+    <section class="section"><h2>7. Changes and contact</h2><p>This policy may be updated if the personal synchronization configuration or its data handling changes. Questions can be sent to <a href="mailto:smjiang.acc@gmail.com">smjiang.acc@gmail.com</a>.</p></section>
+  </div>
+</main>
+  <footer><span>© 2026 rclone_server · Personal-use utility · Not affiliated with Google or the rclone project.</span><span><a href="./privacy.html">Privacy Policy</a> · <a href="mailto:smjiang.acc@gmail.com">Contact</a></span></footer>
+</body>
+</html>
